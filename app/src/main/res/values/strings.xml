@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyViewList_Demo</string>
+
+    <string name="ciclerimg">加载带圆角的图片</string>
+</resources>
