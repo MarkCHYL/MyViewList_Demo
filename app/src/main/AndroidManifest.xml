@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SimpleCircleImageActivity"/>
+        <activity android:name=".ui.SimpleCircleImageActivity"/>
+        <activity android:name=".ui.YMenueAtivity"/>
     </application>
 
 </manifest>

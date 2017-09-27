@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.view.demo.ui.YMenueAtivity"
+    android:background="#666666">
+
+    <!--右下角纵向8个-->
+  <!--  <com.yanzhikai.ymenuview.YMenuView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ymv"
+    app:optionPositionCounts="8"
+    app:optionColumns="1"
+    app:menuButtonBackGround="@drawable/setting"
+    app:optionsBackGround="@drawable/background_option_button" />
+-->
+    <!--右下角3竖8个-->
+   <!-- <com.yanzhikai.ymenuview.YMenuView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ymv"
+    app:optionToParentXMargin="50dp"
+    app:optionPositionCounts="9"
+    app:optionColumns="3"
+    app:sd_animMode="FROM_RIGHT"
+    app:menuButtonBackGround="@drawable/setting"
+    app:optionsBackGround="@drawable/background_option_button" />-->
+
+    <!--右下角横向5个-->
+  <!--  <com.yanzhikai.ymenuview.YMenuView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ymv"
+    app:optionToParentXMargin="80dp"
+    app:optionToParentYMargin="25dp"
+    app:optionPositionCounts="5"
+    app:optionColumns="5"
+    app:sd_animMode="FROM_BUTTON_LEFT"
+    app:menuButtonBackGround="@drawable/setting"
+    app:optionsBackGround="@drawable/background_option_button" />-->
+
+
+    <!--Circle8-->
+  <!--  <com.yanzhikai.ymenuview.Circle8YMenu
+    android:id="@+id/ymv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:menuButtonBackGround="@drawable/setting"
+    app:optionXMargin="60dp"
+    app:optionColumns="1"
+    app:optionPositionCounts="8"
+    app:optionsBackGround="@drawable/background_option_button" />-->
+
+    <!--Tree-->
+   <!-- <com.yanzhikai.ymenuview.TreeYMenu
+    android:id="@+id/ymv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:menuButtonBackGround="@drawable/setting"
+    app:optionXMargin="40dp"
+    app:optionYMargin="40dp"
+    app:menuToParentYMargin="60dp"
+    app:sd_duration="400"
+    app:optionColumns="1"
+    app:optionPositionCounts="9"
+    app:optionsBackGround="@drawable/background_option_button" />-->
+
+    <!--Square-->
+    <com.yanzhikai.ymenuview.SquareYMenu
+        android:id="@+id/ymv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:menuButtonBackGround="@drawable/setting"
+        app:optionXMargin="50dp"
+        app:optionYMargin="50dp"
+        app:sd_duration="400"
+        app:optionPositionCounts="8"
+        app:optionsBackGround="@drawable/background_option_button" />
+
+</RelativeLayout>

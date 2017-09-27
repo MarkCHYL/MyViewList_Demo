@@ -5,6 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.view.demo.ui.SimpleCircleImageActivity;
+import com.view.demo.ui.YMenueAtivity;
+
 public class MarkActivity extends AppCompatActivity {
 
     @Override
@@ -15,5 +18,13 @@ public class MarkActivity extends AppCompatActivity {
 
     public void doCicleImg(View view){
         startActivity(new Intent(this,SimpleCircleImageActivity.class));
+    }
+
+    public void doSpanText(View view){
+
+    }
+
+    public void doYMunue(View view){
+        startActivity(new Intent(this,YMenueAtivity.class));
     }
 }
