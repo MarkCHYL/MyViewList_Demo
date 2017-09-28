@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.view.demo.ui.EmojiActivity;
 import com.view.demo.ui.SimpleCircleImageActivity;
 import com.view.demo.ui.YMenueAtivity;
 
@@ -26,5 +27,9 @@ public class MarkActivity extends AppCompatActivity {
 
     public void doYMunue(View view){
         startActivity(new Intent(this,YMenueAtivity.class));
+    }
+
+    public void doEmojiview(View view){
+        startActivity(new Intent(this, EmojiActivity.class));
     }
 }

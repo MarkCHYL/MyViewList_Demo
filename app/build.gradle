@@ -28,4 +28,5 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
     compile 'com.yanzhikaijky:YMenuView:2.0.1'//菜单 YMenuView
+    compile 'com.mabeijianxi:jianxiexpression:2.2.8'//自定义表情库
 }

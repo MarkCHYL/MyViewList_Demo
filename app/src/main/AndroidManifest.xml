@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".ui.SimpleCircleImageActivity"/>
         <activity android:name=".ui.YMenueAtivity"/>
+        <activity android:name=".ui.EmojiActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
     </application>
 
 </manifest>
