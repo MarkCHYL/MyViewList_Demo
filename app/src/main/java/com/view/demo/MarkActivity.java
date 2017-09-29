@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.view.demo.ui.EmojiActivity;
 import com.view.demo.ui.SimpleCircleImageActivity;
+import com.view.demo.ui.Wheel3DActivity;
 import com.view.demo.ui.YMenueAtivity;
 
 public class MarkActivity extends AppCompatActivity {
@@ -31,5 +32,10 @@ public class MarkActivity extends AppCompatActivity {
 
     public void doEmojiview(View view){
         startActivity(new Intent(this, EmojiActivity.class));
+    }
+
+    public void do3DWheel(View view){
+        startActivity(new Intent(this, Wheel3DActivity.class));
+        startActivity(new Intent(this, Wheel3DActivity.class));
     }
 }

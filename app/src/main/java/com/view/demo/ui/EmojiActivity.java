@@ -24,6 +24,9 @@ import com.view.demo.R;
 
 /**
  * 自定义表情库
+ *
+ * git地址：https://github.com/rockerhieu/emojicon
+ * 一位大佬的的： https://github.com/mabeijianxi/android-expression
  * Created by Mark on 2017/9/28.
  */
 

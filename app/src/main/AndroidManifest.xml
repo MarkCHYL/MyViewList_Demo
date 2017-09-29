@@ -20,6 +20,8 @@
         <activity android:name=".ui.YMenueAtivity"/>
         <activity android:name=".ui.EmojiActivity"
             android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".ui.Wheel3DActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

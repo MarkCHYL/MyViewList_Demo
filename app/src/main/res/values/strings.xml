@@ -5,4 +5,5 @@
     <string name="leadingmarginspan">TextView 缩进指定距离</string>
     <string name="ymenueview">YMenuView 菜单</string>
     <string name="emojiview">emojiview 自定义</string>
+    <string name="wheel3dview">3D旋转效果</string>
 </resources>
