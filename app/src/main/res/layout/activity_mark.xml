@@ -39,4 +39,9 @@
         android:text="@string/wheel3dview"
         android:onClick="do3DWheel"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/broadcasts"
+        android:onClick="doBroadcasts"/>
 </LinearLayout>
