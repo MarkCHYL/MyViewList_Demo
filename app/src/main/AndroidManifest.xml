@@ -9,13 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MarkActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".MarkActivity"/>
         <activity android:name=".ui.SimpleCircleImageActivity"/>
         <activity android:name=".ui.YMenueAtivity"/>
         <activity android:name=".ui.EmojiActivity"
@@ -24,6 +18,16 @@
             android:screenOrientation="portrait"/>
         <activity android:name=".ui.BroadcastsDemoActivity"/>
         <activity android:name=".ui.GestrueActivity"/>
+        <activity android:name=".ui.WelcomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.SetLockActivity"/>
+        <activity android:name=".ui.UnlockActivity"/>
 
         <!--广播注册-->
         <receiver android:name=".presenter.FirstBroadcastReceiver">
