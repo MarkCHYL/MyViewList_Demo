@@ -7,6 +7,9 @@
     <string name="emojiview">emojiview 自定义</string>
     <string name="wheel3dview">3D旋转效果</string>
     <string name="broadcasts">广播的学习</string>
-    <string name="Normalbroadcasts">无序广播</string>
-    <string name="Orderedbroadcasts">有序广播</string>
+       <string name="Normalbroadcasts">无序广播</string>
+       <string name="Orderedbroadcasts">有序广播</string>
+
+    <string name="LockIndicator">九宫格解锁</string>
+    <string name="LockIndicatortext">请绘制图案</string>
 </resources>

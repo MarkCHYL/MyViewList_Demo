@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.view.demo.ui.BroadcastsDemoActivity;
 import com.view.demo.ui.EmojiActivity;
+import com.view.demo.ui.GestrueActivity;
 import com.view.demo.ui.SimpleCircleImageActivity;
 import com.view.demo.ui.Wheel3DActivity;
 import com.view.demo.ui.YMenueAtivity;
@@ -41,5 +42,9 @@ public class MarkActivity extends AppCompatActivity {
 
     public  void  doBroadcasts(View view){
         startActivity(new Intent(this, BroadcastsDemoActivity.class));
+    }
+
+    public void doLockIndicator(View view){
+        startActivity(new Intent(this, GestrueActivity.class));
     }
 }

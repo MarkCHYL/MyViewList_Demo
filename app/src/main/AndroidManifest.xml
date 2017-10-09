@@ -23,6 +23,7 @@
         <activity android:name=".ui.Wheel3DActivity"
             android:screenOrientation="portrait"/>
         <activity android:name=".ui.BroadcastsDemoActivity"/>
+        <activity android:name=".ui.GestrueActivity"/>
 
         <!--广播注册-->
         <receiver android:name=".presenter.FirstBroadcastReceiver">
