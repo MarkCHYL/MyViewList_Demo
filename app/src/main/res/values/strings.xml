@@ -12,4 +12,6 @@
 
     <string name="LockIndicator">九宫格解锁</string>
     <string name="LockIndicatortext">请绘制图案</string>
+
+    <string name="activitytoresult">StartActivityResult的使用</string>
 </resources>

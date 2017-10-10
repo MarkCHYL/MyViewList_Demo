@@ -1,53 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_margin="20dp"
+    android:orientation="vertical"
     tools:context="com.view.demo.MarkActivity">
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/ciclerimg"
-        android:onClick="doCicleImg"/>
+        android:onClick="doCicleImg"
+        android:text="@string/ciclerimg" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="doSpanText"
         android:text="@string/leadingmarginspan"
-        android:onClick="doSpanText"/>
+        android:textAllCaps="false" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="doYMunue"
         android:text="@string/ymenueview"
-        android:onClick="doYMunue"/>
-
-    <Button
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/emojiview"
-    android:onClick="doEmojiview"/>
+        android:textAllCaps="false" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/wheel3dview"
-        android:onClick="do3DWheel"/>
+        android:onClick="doEmojiview"
+        android:text="@string/emojiview"
+        android:textAllCaps="false" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/broadcasts"
-        android:onClick="doBroadcasts"/>
+        android:onClick="do3DWheel"
+        android:text="@string/wheel3dview" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/LockIndicator"
-        android:onClick="doLockIndicator"/>
+        android:onClick="doBroadcasts"
+        android:text="@string/broadcasts" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doLockIndicator"
+        android:text="@string/LockIndicator" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doRsultActivity"
+        android:text="@string/activitytoresult"
+        android:textAllCaps="false" />
 </LinearLayout>

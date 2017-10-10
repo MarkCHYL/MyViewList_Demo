@@ -20,31 +20,35 @@ public class MarkActivity extends AppCompatActivity {
         setContentView(R.layout.activity_mark);
     }
 
-    public void doCicleImg(View view){
-        startActivity(new Intent(this,SimpleCircleImageActivity.class));
+    public void doCicleImg(View view) {
+        startActivity(new Intent(this, SimpleCircleImageActivity.class));
     }
 
-    public void doSpanText(View view){
+    public void doSpanText(View view) {
 
     }
 
-    public void doYMunue(View view){
-        startActivity(new Intent(this,YMenueAtivity.class));
+    public void doYMunue(View view) {
+        startActivity(new Intent(this, YMenueAtivity.class));
     }
 
-    public void doEmojiview(View view){
+    public void doEmojiview(View view) {
         startActivity(new Intent(this, EmojiActivity.class));
     }
 
-    public void do3DWheel(View view){
+    public void do3DWheel(View view) {
         startActivity(new Intent(this, Wheel3DActivity.class));
     }
 
-    public  void  doBroadcasts(View view){
+    public void doBroadcasts(View view) {
         startActivity(new Intent(this, BroadcastsDemoActivity.class));
     }
 
-    public void doLockIndicator(View view){
+    public void doLockIndicator(View view) {
         startActivity(new Intent(this, GestrueActivity.class));
+    }
+
+    public void doRsultActivity(View view){
+        startActivity(new Intent());
     }
 }
