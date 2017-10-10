@@ -6,6 +6,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Matrix;
 import android.graphics.Paint;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -291,6 +292,14 @@ public class LockPatternView extends View {
                 if (onPatterChangeListener != null){
                     onPatterChangeListener.onPatterChange(null);
                 }
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        resetPoint();
+                        //刷新View
+                        postInvalidate();
+                    }
+                },1000);
             }else //绘制成功
             {
                 if (onPatterChangeListener != null){
@@ -301,6 +310,7 @@ public class LockPatternView extends View {
                         }
                         if (passwordStr != null){
                             onPatterChangeListener.onPatterChange(passwordStr);
+                            resetPoint();
                         }
                     }
                 }
