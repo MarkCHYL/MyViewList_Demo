@@ -6,8 +6,14 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="doNextActivity"/>
+        android:onClick="doNextActivity"
+        android:text="goNext"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="doNextActivity2"
+        android:text="goNext2"/>
     <TextView
         android:id="@+id/tv_show"
         android:layout_width="match_parent"

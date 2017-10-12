@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.view.demo.ui.BroadcastsDemoActivity;
+import com.view.demo.ui.DoActivityResultActivity;
 import com.view.demo.ui.EmojiActivity;
 import com.view.demo.ui.GestrueActivity;
 import com.view.demo.ui.SimpleCircleImageActivity;
@@ -49,6 +50,6 @@ public class MarkActivity extends AppCompatActivity {
     }
 
     public void doRsultActivity(View view){
-        startActivity(new Intent());
+        startActivity(new Intent(MarkActivity.this, DoActivityResultActivity.class));
     }
 }

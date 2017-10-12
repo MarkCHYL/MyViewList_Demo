@@ -1,5 +1,6 @@
 package com.view.demo.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -30,6 +31,24 @@ public class DoActivityResultActivity extends AppCompatActivity{
     }
 
     public void doNextActivity(View view){
+        startActivityForResult(new Intent(DoActivityResultActivity.this,DoActivityResultActivity01.class
+                ),2);
+    }
+    public void doNextActivity2(View view){
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        switch (requestCode){
+            case 2:
+                if (resultCode == 3){
+                    tv_show.setText("我想找个女朋友");
+                }else if (resultCode == 2){
+                    tv_show.setText("好喜欢唐嫣");
+                }
+                break;
+        }
 
     }
 }
