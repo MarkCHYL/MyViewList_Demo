@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.view.demo.ui.BlueToothActivity;
 import com.view.demo.ui.BroadcastsDemoActivity;
 import com.view.demo.ui.DoActivityResultActivity;
 import com.view.demo.ui.EmojiActivity;
@@ -51,5 +52,9 @@ public class MarkActivity extends AppCompatActivity {
 
     public void doRsultActivity(View view){
         startActivity(new Intent(MarkActivity.this, DoActivityResultActivity.class));
+    }
+
+    public void doBluetooth(View view){
+        startActivity(new Intent(MarkActivity.this, BlueToothActivity.class));
     }
 }
