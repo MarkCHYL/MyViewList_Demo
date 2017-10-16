@@ -10,11 +10,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.FrameLayout;
 import android.widget.GridView;
 import android.widget.TextView;
 
-import com.view.mark_festival_sms.ChooseMsgActivity;
+import com.view.mark_festival_sms.ui.ChooseMsgActivity;
 import com.view.mark_festival_sms.R;
 import com.view.mark_festival_sms.bean.FestivalBean;
 import com.view.mark_festival_sms.bean.FestivalLab;

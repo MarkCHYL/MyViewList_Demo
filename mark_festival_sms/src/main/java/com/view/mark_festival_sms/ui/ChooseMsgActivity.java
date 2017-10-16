@@ -1,4 +1,4 @@
-package com.view.mark_festival_sms;
+package com.view.mark_festival_sms.ui;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.view.mark_festival_sms.R;
 import com.view.mark_festival_sms.bean.FestivalLab;
 import com.view.mark_festival_sms.bean.Msg;
 

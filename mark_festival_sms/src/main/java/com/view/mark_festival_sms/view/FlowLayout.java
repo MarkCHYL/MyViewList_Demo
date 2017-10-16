@@ -1,4 +1,4 @@
-package com.view.mark_festival_sms;
+package com.view.mark_festival_sms.view;
 
 import android.content.Context;
 import android.util.AttributeSet;

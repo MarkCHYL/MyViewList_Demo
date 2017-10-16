@@ -1,11 +1,10 @@
-package com.view.mark_festival_sms;
+package com.view.mark_festival_sms.ui;
 
 import android.Manifest;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
@@ -16,15 +15,17 @@ import android.telephony.SmsManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.view.mark_festival_sms.R;
 import com.view.mark_festival_sms.bean.FestivalBean;
 import com.view.mark_festival_sms.bean.FestivalLab;
 import com.view.mark_festival_sms.bean.Msg;
+import com.view.mark_festival_sms.view.FlowLayout;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
 
 /**
  * 发送短信
@@ -83,7 +84,7 @@ public class SendMsgactivity extends AppCompatActivity {
                 public void onClick(View view) {
                     if (mEdMsg.getText().toString() != null && mEdMsg.getText().toString().length() != 0){
                         // 判断环境兼容，检查自己的权限，是否被同意
-                        if (ContextCompat.checkSelfPermission(SendMsgactivity.this, Manifest.permission.SEND_SMS)!= PackageManager.PERMISSION_GRANTED){
+                        if (ContextCompat.checkSelfPermission(SendMsgactivity.this, Manifest.permission.SEND_SMS) != PackageManager.PERMISSION_GRANTED){
                             //如果不同意，就去请求权限   参数1：上下文，2：权限，3：请求码
                             ActivityCompat.requestPermissions(SendMsgactivity.this,new String []{Manifest.permission.SEND_SMS},1);
                         }else {
@@ -94,6 +95,18 @@ public class SendMsgactivity extends AppCompatActivity {
                 }
             });
         }
+
+        mBtnAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (ContextCompat.checkSelfPermission(SendMsgactivity.this, Manifest.permission.READ_CONTACTS) != PackageManager.PERMISSION_GRANTED){
+                    //如果不同意，就去请求权限   参数1：上下文，2：权限，3：请求码
+                    ActivityCompat.requestPermissions(SendMsgactivity.this,new String []{Manifest.permission.READ_CONTACTS},1);
+                }else {
+                    startActivityForResult(new Intent(SendMsgactivity.this,ContactsActivity.class),2121);
+                }
+            }
+        });
 
 
     }
@@ -134,5 +147,16 @@ public class SendMsgactivity extends AppCompatActivity {
         // 弹出一个浮动框显示提示内容，Toast.LENGTH_LONG代表浮动框显示时间的长短
         Toast.makeText(SendMsgactivity.this, "短信发送完成", Toast.LENGTH_LONG).show();
 
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        switch (requestCode){
+            case 2121:
+                if (resultCode == 101){
+                    int phoneNum = getIntent().getIntExtra("phoneNum",0);
+                }
+                break;
+        }
     }
 }
