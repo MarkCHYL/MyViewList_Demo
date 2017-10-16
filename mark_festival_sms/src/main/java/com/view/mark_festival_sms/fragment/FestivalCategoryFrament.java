@@ -6,7 +6,11 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.FrameLayout;
+import android.widget.GridView;
+
+import com.view.mark_festival_sms.bean.FestivalBean;
 
 /**
  *
@@ -15,6 +19,8 @@ import android.widget.FrameLayout;
 
 public class FestivalCategoryFrament extends Fragment {
 
+    private GridView gridView;
+    private ArrayAdapter<FestivalBean> arrayAdapter;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

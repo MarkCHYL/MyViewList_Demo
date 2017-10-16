@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gd_festivsl_show"
+    android:layout_row="4"
+    android:layout_span="2"
+    android:horizontalSpacing="5dp"
+    android:verticalSpacing="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</GridView>
