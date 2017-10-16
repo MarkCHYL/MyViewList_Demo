@@ -3,6 +3,7 @@
     android:id="@+id/gd_festivsl_show"
     android:layout_row="4"
     android:layout_span="2"
+    android:numColumns="3"
     android:horizontalSpacing="5dp"
     android:verticalSpacing="10dp"
     android:layout_width="match_parent"
