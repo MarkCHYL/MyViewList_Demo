@@ -7,4 +7,5 @@
     <color name="send_dongtai_background_color">#f2f2f2</color>
     <color name="word_normal_color">#282828</color>
     <color name="grey8">#888888</color>
+    <color name="translate">#00000000</color>
 </resources>

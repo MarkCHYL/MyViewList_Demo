@@ -15,4 +15,5 @@
 
     <string name="activitytoresult">StartActivityResult的使用</string>
     <string name="bluetooth">调用本地的蓝牙</string>
+    <string name="ios_dialog">仿IOS的dialog</string>
 </resources>

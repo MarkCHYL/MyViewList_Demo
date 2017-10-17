@@ -10,6 +10,7 @@ import com.view.demo.ui.BroadcastsDemoActivity;
 import com.view.demo.ui.DoActivityResultActivity;
 import com.view.demo.ui.EmojiActivity;
 import com.view.demo.ui.GestrueActivity;
+import com.view.demo.ui.IosDialogActivity;
 import com.view.demo.ui.SimpleCircleImageActivity;
 import com.view.demo.ui.Wheel3DActivity;
 import com.view.demo.ui.YMenueAtivity;
@@ -56,5 +57,9 @@ public class MarkActivity extends AppCompatActivity {
 
     public void doBluetooth(View view){
         startActivity(new Intent(MarkActivity.this, BlueToothActivity.class));
+    }
+
+    public void doIosDialog(View view){
+        startActivity(new Intent(MarkActivity.this, IosDialogActivity.class));
     }
 }

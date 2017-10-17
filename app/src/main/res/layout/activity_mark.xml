@@ -66,4 +66,12 @@
         android:onClick="doBluetooth"
         android:text="@string/bluetooth"
         android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doIosDialog"
+        android:text="@string/ios_dialog"
+        android:textAllCaps="false" />
+
 </LinearLayout>
