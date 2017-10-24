@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/mark_festival_sms/mark_festival_sms.iml" filepath="$PROJECT_DIR$/mark_festival_sms/mark_festival_sms.iml" />
       <module fileurl="file://$PROJECT_DIR$/mycoordinatorlayout/mycoordinatorlayout.iml" filepath="$PROJECT_DIR$/mycoordinatorlayout/mycoordinatorlayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mycoordinatorlayout/mycoordinatorlayout.iml" filepath="$PROJECT_DIR$/mycoordinatorlayout/mycoordinatorlayout.iml" />
     </modules>
   </component>
 </project>
