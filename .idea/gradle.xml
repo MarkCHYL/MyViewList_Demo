@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/mark_festival_sms" />
+            <option value="$PROJECT_DIR$/mycoordinatorlayout" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
