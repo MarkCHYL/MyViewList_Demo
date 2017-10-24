@@ -15,6 +15,8 @@
         <activity android:name=".ui.CoordinatorLayoutOne"/>
         <activity android:name=".ui.CoordinatorLayoutTwo"/>
         <activity android:name=".ui.CoordinatorLayoutThree"/>
+        <activity android:name=".ui.CoordinatorLayoutFour"/>
+        <activity android:name=".ui.CoordinatorLayoutFive"/>
     </application>
 
 </manifest>

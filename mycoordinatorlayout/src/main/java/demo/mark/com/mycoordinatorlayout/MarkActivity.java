@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import demo.mark.com.mycoordinatorlayout.ui.CoordinatorLayoutFive;
+import demo.mark.com.mycoordinatorlayout.ui.CoordinatorLayoutFour;
 import demo.mark.com.mycoordinatorlayout.ui.CoordinatorLayoutOne;
 import demo.mark.com.mycoordinatorlayout.ui.CoordinatorLayoutThree;
 import demo.mark.com.mycoordinatorlayout.ui.CoordinatorLayoutTwo;
@@ -28,5 +30,11 @@ public class MarkActivity extends AppCompatActivity {
 
     public void doThree(View view){
         startActivity(new Intent(MarkActivity.this, CoordinatorLayoutThree.class));
+    }
+    public void doFour(View view){
+        startActivity(new Intent(MarkActivity.this, CoordinatorLayoutFour.class));
+    }
+    public void doFive(View view){
+        startActivity(new Intent(MarkActivity.this, CoordinatorLayoutFive.class));
     }
 }

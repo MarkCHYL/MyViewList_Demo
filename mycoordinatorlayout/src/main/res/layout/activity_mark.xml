@@ -29,4 +29,16 @@
         android:text="AppBarLayout嵌套CollapsingToolbarLayout"
         android:textAllCaps="false"
         android:onClick="doThree"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="浮动操作按钮与Snackbar"
+        android:textAllCaps="false"
+        android:onClick="doFour"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ViewPager视觉特差效果 "
+        android:textAllCaps="false"
+        android:onClick="doFive"/>
 </LinearLayout>
