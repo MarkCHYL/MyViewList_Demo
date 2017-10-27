@@ -1,1 +1,1 @@
-include ':app', ':mark_festival_sms', ':mycoordinatorlayout'
+include ':app', ':mark_festival_sms', ':mycoordinatorlayout', ':mysqlitedemo'

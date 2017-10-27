@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.view.demo.mysqlitedemo.MarkActivity">
+
+   <LinearLayout
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:orientation="vertical">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/doSQLiteDb"
+             android:onClick="doCreateDB"/>
+
+         <Button
+             android:id="@+id/btn_insert"
+             android:layout_marginTop="15dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/insertDB"
+             android:onClick="click"/>
+
+         <Button
+             android:id="@+id/btn_updata"
+             android:layout_marginTop="15dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/updateDb"
+             android:onClick="click"/>
+
+         <Button
+             android:id="@+id/btn_delete"
+             android:layout_marginTop="15dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/deleteDb"
+             android:onClick="click"/>
+
+         <Button
+             android:id="@+id/btn_query"
+             android:layout_marginTop="15dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="sql语言查询"
+             android:onClick="click"/>
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+         <Button
+             android:id="@+id/btn_insertapi"
+             android:layout_marginTop="60dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="api插入"
+             android:onClick="click"/>
+
+         <Button
+             android:id="@+id/btn_updatepi"
+             android:layout_marginTop="15dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="api修改"
+             android:onClick="click"/>
+
+         <Button
+             android:id="@+id/btn_deletepi"
+             android:layout_marginTop="15dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="api删除"
+             android:onClick="click"/>
+
+         <Button
+             android:id="@+id/btn_queryapi"
+             android:layout_marginTop="15dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="api查询"
+             android:onClick="click"/>
+      </LinearLayout>
+
+   </LinearLayout>
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="#aacccc"
+       android:text="演示数据库中查询的数据显示"/>
+   <ListView
+       android:id="@+id/lv"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:scrollbars="none"/>
+</LinearLayout>
+
+</RelativeLayout>

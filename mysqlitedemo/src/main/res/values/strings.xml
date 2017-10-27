@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MySQLiteDemo</string>
+    <string name="doSQLiteDb">点击创建数据库</string>
+    <string name="insertDB">点击插入sql数据</string>
+    <string name="updateDb">修改数据</string>
+    <string name="deleteDb">点击删除数据</string>
+</resources>
