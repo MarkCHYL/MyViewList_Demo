@@ -1,6 +1,7 @@
 package com.view.demo.mysqlitedemo;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Environment;
@@ -53,8 +54,8 @@ public class MarkActivity extends AppCompatActivity {
         //2.将数据源的数据加载到适配器中
         // SimpleCursorAdapter(Context context, int layout, Cursor c, String[] from, int[] to, int flags)
         /*Context context 上下文对象
-        * int layout   表示适配器中控件的每项item的布局id
-        *  Cursor c    表示Cursor数据源
+        *   int layout   表示适配器中控件的每项item的布局id
+        *   Cursor c    表示Cursor数据源
         *   String[] from  表示cursor中数据表字段的数据
         *   int[] to 表示展示字段的对应的控件的资源的id
         *   int flags 设置适配器的标记
@@ -66,6 +67,7 @@ public class MarkActivity extends AppCompatActivity {
         //3.将适配器中的数据加载到控件中
         //注意：若使用SimpleCursorAdapter，必须包含主键 _ID
         lv.setAdapter(cursorAdapter);
+        db.close();
     }
 
     private void initViews() {
@@ -203,6 +205,12 @@ public class MarkActivity extends AppCompatActivity {
                     Log.i("tag",p.toString());
                 }
                 db.close();
+                break;
+            case R.id.btn_cursorAdapter:
+                startActivity(new Intent(MarkActivity.this,CursorAdapterActivity.class));
+                break;
+            case R.id.btn_transation:
+                startActivity(new Intent(MarkActivity.this,TransactionActivity.class));
                 break;
         }
     }

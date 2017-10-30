@@ -65,8 +65,16 @@
           android:layout_height="wrap_content"
           android:orientation="vertical">
          <Button
+             android:id="@+id/btn_cursorAdapter"
+             android:layout_marginTop="10dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="cursorAdapter的适配"
+             android:textAllCaps="false"
+             android:onClick="click"/>
+         <Button
              android:id="@+id/btn_insertapi"
-             android:layout_marginTop="60dp"
+             android:layout_marginTop="10dp"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:text="api插入"
@@ -98,7 +106,13 @@
       </LinearLayout>
 
    </LinearLayout>
-
+      <Button
+          android:id="@+id/btn_transation"
+          android:layout_marginTop="15dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="事物操作"
+          android:onClick="click"/>
    <TextView
        android:layout_width="match_parent"
        android:layout_height="wrap_content"

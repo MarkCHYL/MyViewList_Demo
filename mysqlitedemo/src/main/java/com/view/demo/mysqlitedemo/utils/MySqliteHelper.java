@@ -24,6 +24,7 @@ public class MySqliteHelper extends SQLiteOpenHelper{
         super(context, name, factory, version);
     }
     /**
+     * 创建数据库（利用帮助类创建）
      * 自定义的数据库帮助类的构造函数
      * 方便调用管理
      * @param context
