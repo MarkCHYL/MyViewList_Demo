@@ -58,6 +58,12 @@
              android:layout_height="wrap_content"
              android:text="sql语言查询"
              android:onClick="click"/>
+         <Button
+             android:id="@+id/btn_transation"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="事物操作"
+             android:onClick="click"/>
       </LinearLayout>
       <LinearLayout
           android:layout_width="0dp"
@@ -103,16 +109,18 @@
              android:layout_height="wrap_content"
              android:text="api查询"
              android:onClick="click"/>
+
+         <Button
+             android:id="@+id/btn_page"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="数据分页查询"
+             android:onClick="click"/>
       </LinearLayout>
 
    </LinearLayout>
-      <Button
-          android:id="@+id/btn_transation"
-          android:layout_marginTop="15dp"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="事物操作"
-          android:onClick="click"/>
+
+
    <TextView
        android:layout_width="match_parent"
        android:layout_height="wrap_content"

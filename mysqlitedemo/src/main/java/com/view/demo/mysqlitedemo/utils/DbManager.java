@@ -69,4 +69,41 @@ public class DbManager {
             }
         }
     }
+
+    /**
+     * 根据数据库以及数据库的表名获取数据总条目
+     * @param db  数据库对象
+     * @param tableName  数据库表名
+     * @return  数据库总条目
+     */
+    public static int getDataCount(SQLiteDatabase db,String tableName){
+        int count = 0;
+        if (db != null){
+            Cursor cursor = db.rawQuery("select * from " + tableName,null);
+            count = cursor.getCount();
+        }
+        return count;
+    }
+
+    /**
+     * 根据当前页码查询获取该页码对应的集合数据
+     * @param db  数据库对象
+     * @param tableName  数据库中表的名称
+     * @param currentPage 当前的页码
+     * @return  当前页对应的数据集合
+     * select * from person ?,?  如何根据当前页码获取该页数据
+     * 0,20    1
+     * 20,40   2
+     * 40,60   3
+     */
+    public static List<Person> getListByCurrentPage(SQLiteDatabase db,String tableName
+                                                    ,int currentPage,int pageSize){
+        int index = (currentPage - 1) * pageSize;//获取当前页码第一条数据的下标
+        Cursor cursor = null;
+        if (db != null){
+            String sql = "select * from "+ Constant.TABLE_NAME+ " limit ?,? ";
+            cursor = db.rawQuery(sql,new String[]{index + "",pageSize+ ""});
+        }
+        return cursorToList(cursor);
+    }
 }

@@ -212,6 +212,9 @@ public class MarkActivity extends AppCompatActivity {
             case R.id.btn_transation:
                 startActivity(new Intent(MarkActivity.this,TransactionActivity.class));
                 break;
+            case R.id.btn_page:
+                startActivity(new Intent(MarkActivity.this,LimitPageActivity.class));
+                break;
         }
     }
 }
