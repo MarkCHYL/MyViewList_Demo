@@ -13,6 +13,7 @@ import com.view.demo.mysqlitedemo.adapter.MyAdapter;
 import com.view.demo.mysqlitedemo.bean.Person;
 import com.view.demo.mysqlitedemo.utils.Constant;
 import com.view.demo.mysqlitedemo.utils.DbManager;
+import com.view.demo.mysqlitedemo.utils.MySqliteHelper;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -27,6 +28,7 @@ public class LimitPageActivity extends AppCompatActivity {
 
     private ListView listView;
     private SQLiteDatabase db;
+    private MySqliteHelper helper;
     //1.获取数据库查询的数据源
     private String path = Environment.getExternalStorageDirectory().getAbsolutePath()
             + File.separator +"info.db";
@@ -41,13 +43,14 @@ public class LimitPageActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_limit_page);
-
+        helper = DbManager.getInstance(this);
         initViews();
     }
 
     private void initViews() {
         listView = (ListView) findViewById(R.id.lv_limit_page);
-        db = SQLiteDatabase.openDatabase(path,null,SQLiteDatabase.OPEN_READONLY);
+//        db = SQLiteDatabase.openDatabase(path,null,SQLiteDatabase.OPEN_READONLY);
+        db = helper.getReadableDatabase();
          //获取数据库的总条目
         totalNum = DbManager.getDataCount(db, Constant.TABLE_NAME);
         //根据总条目的大小和每页展示的数据条目   获取总页数

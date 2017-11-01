@@ -43,13 +43,20 @@ public class MarkActivity extends AppCompatActivity {
         //1.获取数据库查询的数据源
         String path = Environment.getExternalStorageDirectory().getAbsolutePath()
                 + File.separator +"info.db";
+        Log.e("tag",path);
         /*openDatabase(String path, SQLiteDatabase.CursorFactory factory, int flags)
         * String path 表示当前打开的数据库的存储路径
         * CursorFactory factory
         * int flags 表示打开数据库的操作模式
         * */
-        db = SQLiteDatabase.openDatabase(path,null,SQLiteDatabase.OPEN_READONLY);
+//        db = SQLiteDatabase.openDatabase(path,null,SQLiteDatabase.OPEN_READONLY);
+//        Cursor cursor = db.rawQuery("select * from " + Constant.TABLE_NAME,null);
+        db = helper.getWritableDatabase();
         Cursor cursor = db.rawQuery("select * from " + Constant.TABLE_NAME,null);
+//        DbManager.execSQL(db,sql);
+//        String sql2 = "insert into " + Constant.TABLE_NAME + " values(32,'lisi',25)";
+//        DbManager.execSQL(db,sql2);
+//        db.close();
 
         //2.将数据源的数据加载到适配器中
         // SimpleCursorAdapter(Context context, int layout, Cursor c, String[] from, int[] to, int flags)
