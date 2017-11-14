@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.view.demo.ui.BlueToothActivity;
 import com.view.demo.ui.BroadcastsDemoActivity;
+import com.view.demo.ui.CityPicActivty;
 import com.view.demo.ui.DoActivityResultActivity;
 import com.view.demo.ui.EmojiActivity;
 import com.view.demo.ui.GestrueActivity;
@@ -61,5 +62,8 @@ public class MarkActivity extends AppCompatActivity {
 
     public void doIosDialog(View view){
         startActivity(new Intent(MarkActivity.this, IosDialogActivity.class));
+    }
+    public void picCity(View view){
+        startActivity(new Intent(MarkActivity.this, CityPicActivty.class));
     }
 }

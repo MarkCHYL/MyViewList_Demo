@@ -35,7 +35,8 @@
         <activity android:name=".ui.DoActivityResultActivity01"/>
         <activity android:name=".ui.BlueToothActivity"/>
         <activity android:name=".ui.IosDialogActivity"/>
-		
+		<activity android:name=".ui.CityPicActivty"
+            android:screenOrientation="portrait"/>
 
         <!--广播注册-->
         <receiver android:name=".presenter.FirstBroadcastReceiver">

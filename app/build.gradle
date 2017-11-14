@@ -32,4 +32,7 @@ dependencies {
     compile 'com.mabeijianxi:jianxiexpression:2.2.8'
     //自定义表情库
     compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    //网络请求和Gson数据转换包
+    compile 'com.squareup.okhttp3:okhttp:3.9.0'
+    compile 'com.google.code.gson:gson:2.8.2'
 }

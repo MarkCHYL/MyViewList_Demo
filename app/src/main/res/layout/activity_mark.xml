@@ -7,71 +7,87 @@
     android:layout_margin="20dp"
     android:orientation="vertical"
     tools:context="com.view.demo.MarkActivity">
-
-    <Button
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="doCicleImg"
-        android:text="@string/ciclerimg" />
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="doCicleImg"
+                android:text="@string/ciclerimg" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="doSpanText"
-        android:text="@string/leadingmarginspan"
-        android:textAllCaps="false" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="doSpanText"
+                android:text="@string/leadingmarginspan"
+                android:textAllCaps="false" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="doYMunue"
-        android:text="@string/ymenueview"
-        android:textAllCaps="false" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="doYMunue"
+                android:text="@string/ymenueview"
+                android:textAllCaps="false" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="doEmojiview"
-        android:text="@string/emojiview"
-        android:textAllCaps="false" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="doEmojiview"
+                android:text="@string/emojiview"
+                android:textAllCaps="false" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="do3DWheel"
-        android:text="@string/wheel3dview" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="do3DWheel"
+                android:text="@string/wheel3dview" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="doBroadcasts"
-        android:text="@string/broadcasts" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="doBroadcasts"
+                android:text="@string/broadcasts" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="doLockIndicator"
-        android:text="@string/LockIndicator" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="doLockIndicator"
+                android:text="@string/LockIndicator" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="doRsultActivity"
-        android:text="@string/activitytoresult"
-        android:textAllCaps="false" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="doRsultActivity"
+                android:text="@string/activitytoresult"
+                android:textAllCaps="false" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="doBluetooth"
-        android:text="@string/bluetooth"
-        android:textAllCaps="false" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="doBluetooth"
+                android:text="@string/bluetooth"
+                android:textAllCaps="false" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="doIosDialog"
-        android:text="@string/ios_dialog"
-        android:textAllCaps="false" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="doIosDialog"
+                android:text="@string/ios_dialog"
+                android:textAllCaps="false" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="picCity"
+                android:text="@string/pic_city"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
