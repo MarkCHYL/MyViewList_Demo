@@ -45,6 +45,7 @@ public class SendMsgactivity extends AppCompatActivity {
     
     private FestivalBean festivalBean;
     private Msg msg;
+    private EditText telenum;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +55,7 @@ public class SendMsgactivity extends AppCompatActivity {
     }
 
     private void initViews() {
+        telenum =(EditText) findViewById(R.id.id_et_telenum);
         mEdMsg = (EditText) findViewById(R.id.id_et_content);
         mBtnAdd = (Button) findViewById(R.id.id_btn_add);
         mFlContacts = (FlowLayout) findViewById(R.id.id_fl_contacts);
@@ -73,7 +75,10 @@ public class SendMsgactivity extends AppCompatActivity {
                             ActivityCompat.requestPermissions(SendMsgactivity.this,new String []{Manifest.permission.SEND_SMS},1);
                         }else {
                             //同意就拨打
-                            sendSMS("18401750734",msg.getContent());
+                            if (telenum.getText() != null && telenum.getText().length() == 11){
+                                sendSMS(telenum.getText().toString(),msg.getContent());
+                            }
+
                         }
                     }
                 }
@@ -89,7 +94,10 @@ public class SendMsgactivity extends AppCompatActivity {
                             ActivityCompat.requestPermissions(SendMsgactivity.this,new String []{Manifest.permission.SEND_SMS},1);
                         }else {
                             //同意就拨打
-                            sendSMS("18401750734",mEdMsg.getText().toString());
+                            if (telenum.getText() != null && telenum.getText().length() == 11){
+                                sendSMS(telenum.getText().toString(),mEdMsg.getText().toString());
+                            }
+
                         }
                     }
                 }
