@@ -14,6 +14,8 @@
             <option value="$PROJECT_DIR$/mark_festival_sms" />
             <option value="$PROJECT_DIR$/mycoordinatorlayout" />
             <option value="$PROJECT_DIR$/mysqlitedemo" />
+            <option value="$PROJECT_DIR$/mytabledemo" />
+            <option value="$PROJECT_DIR$/slidingmenudemo" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

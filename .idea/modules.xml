@@ -9,6 +9,8 @@
       <module fileurl="file://$PROJECT_DIR$/mark_festival_sms/mark_festival_sms.iml" filepath="$PROJECT_DIR$/mark_festival_sms/mark_festival_sms.iml" />
       <module fileurl="file://$PROJECT_DIR$/mycoordinatorlayout/mycoordinatorlayout.iml" filepath="$PROJECT_DIR$/mycoordinatorlayout/mycoordinatorlayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/mysqlitedemo/mysqlitedemo.iml" filepath="$PROJECT_DIR$/mysqlitedemo/mysqlitedemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mytabledemo/mytabledemo.iml" filepath="$PROJECT_DIR$/mytabledemo/mytabledemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/slidingmenudemo/slidingmenudemo.iml" filepath="$PROJECT_DIR$/slidingmenudemo/slidingmenudemo.iml" />
     </modules>
   </component>
 </project>
