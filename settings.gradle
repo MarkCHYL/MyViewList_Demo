@@ -1,2 +1,2 @@
-include ':app', ':mark_festival_sms', ':mycoordinatorlayout', ':mysqlitedemo', ':lockscreenmsgdemo', ':mytabledemo',
-        ':countdownview', ':slidingmenudemo', ':slidemenulibrary'
+include ':app', ':mark_festival_sms', ':mycoordinatorlayout', ':mysqlitedemo', ':lockscreenmsgdemo',
+        ':mytabledemo', ':countdownview', ':slidingmenudemo', ':slidemenulibrary'
