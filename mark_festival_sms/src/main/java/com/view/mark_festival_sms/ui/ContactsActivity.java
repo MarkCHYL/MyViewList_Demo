@@ -15,6 +15,7 @@ import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.support.v4.app.ActivityCompat;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -60,7 +61,7 @@ public class ContactsActivity extends ListActivity {
     /**联系人名称**/
     private ArrayList<String> mContactsName = new ArrayList<String>();
 
-    /**联系人头像**/
+    /**联系人号码**/
     private ArrayList<String> mContactsNumber = new ArrayList<String>();
 
     /**联系人头像**/
@@ -85,8 +86,10 @@ public class ContactsActivity extends ListActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view,
                                     int position, long id) {
-                Intent intent = new Intent(ContactsActivity.this,SendMsgactivity.class);
+                Intent intent = new Intent();
                 intent.putExtra("phoneNum",mContactsNumber.get(position));
+                Log.e("通讯录",mContactsNumber.get(position));
+                setResult(101, intent);
                 finish();
             }
         });

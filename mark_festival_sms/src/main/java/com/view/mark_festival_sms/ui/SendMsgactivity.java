@@ -12,6 +12,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.telephony.SmsManager;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -26,6 +27,8 @@ import com.view.mark_festival_sms.view.FlowLayout;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * 发送短信
@@ -107,11 +110,14 @@ public class SendMsgactivity extends AppCompatActivity {
         mBtnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (ContextCompat.checkSelfPermission(SendMsgactivity.this, Manifest.permission.READ_CONTACTS) != PackageManager.PERMISSION_GRANTED){
+                if (ContextCompat.checkSelfPermission(SendMsgactivity.this,
+                        Manifest.permission.READ_CONTACTS) != PackageManager.PERMISSION_GRANTED){
                     //如果不同意，就去请求权限   参数1：上下文，2：权限，3：请求码
-                    ActivityCompat.requestPermissions(SendMsgactivity.this,new String []{Manifest.permission.READ_CONTACTS},1);
+                    ActivityCompat.requestPermissions(SendMsgactivity.this,
+                            new String []{Manifest.permission.READ_CONTACTS},1);
                 }else {
-                    startActivityForResult(new Intent(SendMsgactivity.this,ContactsActivity.class),2121);
+                    startActivityForResult(new Intent(SendMsgactivity.this,
+                            ContactsActivity.class),2121);
                 }
             }
         });
@@ -162,9 +168,24 @@ public class SendMsgactivity extends AppCompatActivity {
         switch (requestCode){
             case 2121:
                 if (resultCode == 101){
-                    int phoneNum = getIntent().getIntExtra("phoneNum",0);
+                    Log.d("test", data.getStringExtra("phoneNum"));
+                    String phoneNum = data.getStringExtra("phoneNum");
+                    telenum.setText(getNum(phoneNum));
                 }
                 break;
         }
+    }
+
+    /**
+     * 获取数字
+     * @param phoneNum
+     */
+    private String getNum(String phoneNum) {
+        String str = null;
+        String regEx="[^0-9]";
+        Pattern p = Pattern.compile(regEx);
+        Matcher m = p.matcher(phoneNum);
+        str =  m.replaceAll("").trim();
+        return str;
     }
 }
