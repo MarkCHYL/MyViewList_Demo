@@ -7,7 +7,6 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Rect;
 import android.os.Build;
-import android.support.v4.view.KeyEventCompat;
 import android.support.v4.view.MotionEventCompat;
 import android.support.v4.view.VelocityTrackerCompat;
 import android.support.v4.view.ViewCompat;
@@ -165,8 +164,12 @@ public class CustomViewAbove extends ViewGroup {
 		mScroller = new Scroller(context, sInterpolator);
 		final ViewConfiguration configuration = ViewConfiguration.get(context);
 		mTouchSlop = ViewConfigurationCompat.getScaledPagingTouchSlop(configuration);
-		mMinimumVelocity = configuration.getScaledMinimumFlingVelocity();
-		mMaximumVelocity = configuration.getScaledMaximumFlingVelocity();
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.CUPCAKE) {
+			mMinimumVelocity = configuration.getScaledMinimumFlingVelocity();
+		}
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.DONUT) {
+			mMaximumVelocity = configuration.getScaledMaximumFlingVelocity();
+		}
 		setInternalPageChangeListener(new SimpleOnPageChangeListener() {
 			public void onPageSelected(int position) {
 				if (mViewBehind != null) {
@@ -943,9 +946,9 @@ public class CustomViewAbove extends ViewGroup {
 				if (Build.VERSION.SDK_INT >= 11) {
 					// The focus finder had a bug handling FOCUS_FORWARD and FOCUS_BACKWARD
 					// before Android 3.0. Ignore the tab key on those devices.
-					if (KeyEventCompat.hasNoModifiers(event)) {
+					if (KeyEvent.isModifierKey(KeyEvent.KEYCODE_11)) {
 						handled = arrowScroll(FOCUS_FORWARD);
-					} else if (KeyEventCompat.hasModifiers(event, KeyEvent.META_SHIFT_ON)) {
+					} else if (KeyEvent.isModifierKey(KeyEvent.META_SHIFT_ON)) {
 						handled = arrowScroll(FOCUS_BACKWARD);
 					}
 				}

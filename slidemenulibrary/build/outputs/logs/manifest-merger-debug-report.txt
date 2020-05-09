@@ -1,37 +1,37 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/mark/Desktop/Document/GitHub/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml:2:1-7:12
-INJECTED from /Users/mark/Desktop/Document/GitHub/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml:2:1-7:12
-INJECTED from /Users/mark/Desktop/Document/GitHub/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml:2:1-7:12
-INJECTED from /Users/mark/Desktop/Document/GitHub/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml:2:1-7:12
-INJECTED from /Users/mark/Desktop/Document/GitHub/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml:2:1-7:12
-INJECTED from /Users/mark/Desktop/Document/GitHub/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml:2:1-7:12
-INJECTED from /Users/mark/Desktop/Document/GitHub/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml:2:1-7:12
+ADDED from /Users/mark/Desktop/Document/github/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml:2:1-7:12
+INJECTED from /Users/mark/Desktop/Document/github/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml:2:1-7:12
+INJECTED from /Users/mark/Desktop/Document/github/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml:2:1-7:12
+INJECTED from /Users/mark/Desktop/Document/github/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml:2:1-7:12
+INJECTED from /Users/mark/Desktop/Document/github/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml:2:1-7:12
+INJECTED from /Users/mark/Desktop/Document/github/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml:2:1-7:12
+INJECTED from /Users/mark/Desktop/Document/github/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml:2:1-7:12
 	package
-		ADDED from /Users/mark/Desktop/Document/GitHub/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml:3:5-50
-		INJECTED from /Users/mark/Desktop/Document/GitHub/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
-		INJECTED from /Users/mark/Desktop/Document/GitHub/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
+		ADDED from /Users/mark/Desktop/Document/github/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml:3:5-50
+		INJECTED from /Users/mark/Desktop/Document/github/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
+		INJECTED from /Users/mark/Desktop/Document/github/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
 	android:versionName
-		ADDED from /Users/mark/Desktop/Document/GitHub/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml:5:5-30
-		INJECTED from /Users/mark/Desktop/Document/GitHub/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
-		INJECTED from /Users/mark/Desktop/Document/GitHub/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
+		ADDED from /Users/mark/Desktop/Document/github/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml:5:5-30
+		INJECTED from /Users/mark/Desktop/Document/github/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
+		INJECTED from /Users/mark/Desktop/Document/github/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/mark/Desktop/Document/GitHub/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml:2:11-69
+		ADDED from /Users/mark/Desktop/Document/github/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from /Users/mark/Desktop/Document/GitHub/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml:4:5-28
-		INJECTED from /Users/mark/Desktop/Document/GitHub/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
-		INJECTED from /Users/mark/Desktop/Document/GitHub/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
+		ADDED from /Users/mark/Desktop/Document/github/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml:4:5-28
+		INJECTED from /Users/mark/Desktop/Document/github/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
+		INJECTED from /Users/mark/Desktop/Document/github/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
 uses-sdk
-INJECTED from /Users/mark/Desktop/Document/GitHub/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/mark/Desktop/Document/GitHub/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
-INJECTED from /Users/mark/Desktop/Document/GitHub/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
-INJECTED from /Users/mark/Desktop/Document/GitHub/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
-INJECTED from /Users/mark/Desktop/Document/GitHub/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
+INJECTED from /Users/mark/Desktop/Document/github/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/mark/Desktop/Document/github/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
+INJECTED from /Users/mark/Desktop/Document/github/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
+INJECTED from /Users/mark/Desktop/Document/github/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
+INJECTED from /Users/mark/Desktop/Document/github/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/mark/Desktop/Document/GitHub/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
-		ADDED from /Users/mark/Desktop/Document/GitHub/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
-		INJECTED from /Users/mark/Desktop/Document/GitHub/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
+		INJECTED from /Users/mark/Desktop/Document/github/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
+		ADDED from /Users/mark/Desktop/Document/github/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
+		INJECTED from /Users/mark/Desktop/Document/github/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/mark/Desktop/Document/GitHub/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
-		ADDED from /Users/mark/Desktop/Document/GitHub/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
-		INJECTED from /Users/mark/Desktop/Document/GitHub/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
+		INJECTED from /Users/mark/Desktop/Document/github/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
+		ADDED from /Users/mark/Desktop/Document/github/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml
+		INJECTED from /Users/mark/Desktop/Document/github/MyViewList_Demo/slidemenulibrary/AndroidManifest.xml

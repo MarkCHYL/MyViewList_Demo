@@ -1,8 +1,6 @@
 package com.view.demo.fragment;
 
 import android.content.DialogInterface;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.DialogFragment;
@@ -23,7 +21,6 @@ import android.widget.Toast;
 
 import com.view.demo.R;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,7 +28,6 @@ import java.util.List;
  * 仿IOS底部弹框
  * Created by Mark on 2017/10/17.
  */
-
 public class IOSDialogFragment extends DialogFragment {
 
     private View rootView;
